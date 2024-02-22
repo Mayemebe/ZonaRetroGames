@@ -61,7 +61,6 @@ main {
     font-weight: 300;
     font-size: 50px;
     text-align: center;
-    width: 400px;
 }
 .contenedor-categorias{
     display: flex;
@@ -201,9 +200,7 @@ main {
 #juegosRecomendados .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-   /* Se crean 6 columnas de igual ancho */
     gap: 20px;
-   /* Espacio entre las celdas */
     padding: 50px;
 }
 #juegosRecomendados h2 {
@@ -211,7 +208,7 @@ main {
 }
 #JuegosRecomendados .item {
     background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    border: 1px solid #8f00ff;
 }
 #JuegosRecomendados .item img {
     width: 100%;
@@ -223,12 +220,10 @@ main {
     object-fit: cover;
 }
 .item:hover {
-    background-color: #f0f0f0;
-   /* Cambia el color de fondo al pasar el mouse */
+  
     transform: scale(1.1);
-   /* Aumenta ligeramente el tamaño de la tarjeta al pasar el mouse */
     transition: transform 0.2s ease;
-   /* Agrega una transición suave al efecto de escala */
+
 }
 /* Estilos para sección 4 */
 #juegosOnline{
@@ -238,18 +233,16 @@ main {
     left: 500px;
 }
 .corazoncito {
+    top: -80px;
     position: relative;
-    left: -60px;
-   /* Ajusta la posición horizontal */
+    right: -70px;
     z-index: 1;
-   /* Asegura que el icono esté sobre la imagen */
-    margin-bottom: -50px;
+
+    
 }
 .corazoncito svg {
     width: 60px;
-   /* Ajusta el ancho del SVG */
     height: 60px;
-   /* Ajusta la altura del SVG */
 }
 .item p {
     color: white;
@@ -261,7 +254,6 @@ main {
 }
 #juegosOnline .bloquesOnline{
     position: relative;
-    width: 500px;
     height: 600px;
     top: 70px;
 }
@@ -276,6 +268,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../imagenes/survivor.jpeg);
+    background-size: cover;
 }
 .caja2 {
     position: absolute;
@@ -288,6 +282,8 @@ main {
     width: 160px;
     height: 250px;
     background-color: #DDDDDD;
+    background-image: url(../imagenes/Toy_Story_for_the_PS1.webp);
+    background-size: cover;
 }
 .caja3 {
     position: absolute;
@@ -300,6 +296,9 @@ main {
     width: 200px;
     height: 120px;
     background-color: #DDDDDD;
+    background-image: url(../imagenes/pepsiman.jpeg);
+    background-size: cover;
+
 }
 .bloquesOnline p {
     position: absolute;
@@ -400,7 +399,7 @@ footer a {
     height: 400px;
     background-image: url(../imagenes/imgcontacto.jpg);
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-x:  hidden;
     background-size: cover;
 }
 #formulario-contacto {
@@ -645,7 +644,7 @@ button:hover {
    }
     .corazoncito {
         position: relative;
-        top: -40px;
+        top: -90px;
         left: 38px;
         z-index: 1;
    }
@@ -704,7 +703,10 @@ button:hover {
         width: 50%;
        /* Reducir el ancho de las columnas en el footer */
    }
-    body {
-        overflow-x: hidden;
-   }
+
+   body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+    
 }
