@@ -581,20 +581,17 @@ button:hover {
    }
     #hero h1 {
         font-size: 22px;
-       /* ajustar según necesidad */
         margin-top: 40px;
-       /* ajustar según necesidad */
         text-align: justify;
         margin: 20px;
         margin-top: 50px;
    }
     #hero a {
         height: 40px;
-       /* ajustar según necesidad */
+       
         top: 220px;
-       /* ajustar según necesidad */
+      
         font-size: 14px;
-       /* ajustar según necesidad */
         position: static;
         margin: 40px;
    }
@@ -709,12 +706,6 @@ button:hover {
 
 }
 
-
-
-
-  
-
-
 /* Media queries para sección 4 del Home > Juegos Online */
 /* Estilos para movil */
 @media screen and (max-width: 768px) {
@@ -753,20 +744,16 @@ button:hover {
    }
     .botonletter {
         left: 0;
-       /* Reiniciar la posición izquierda */
         top: -28px;
-       /* Reiniciar la posición superior */
         margin: 20px auto;
-       /* Centrar horizontalmente */
+       
    }
     .footer-columna {
         width: 50%;
-       /* Reducir el ancho de las columnas en el footer */
    }
 
-   body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+   
+   
     
 }
+    
