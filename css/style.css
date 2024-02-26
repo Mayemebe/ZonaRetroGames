@@ -176,7 +176,12 @@ main {
     
 
   }
+  
+  .crashOnline {
 
+    position: relative;
+    left: 40px;
+  }
 
 
 /* Estilos para sección 2 */
