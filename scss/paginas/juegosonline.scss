@@ -1,0 +1,42 @@
+/* Landing juegos online */
+.juegos-online {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 30px;
+  
+    .juego {
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+  
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+  
+      h2 {
+        margin-top: 10px;
+      }
+  
+      p {
+        color: #555;
+      }
+  
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+    }
+  }
+  

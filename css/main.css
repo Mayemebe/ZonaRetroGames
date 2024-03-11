@@ -1,0 +1,956 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+footer {
+  background-color: black;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 200;
+}
+footer .footer-columna {
+  width: 20%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background-color: #030303;
+}
+@media (max-width: 767px) {
+  footer .footer-columna {
+    width: 50%;
+  }
+}
+footer .footer-columna h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: #030303;
+  color: white;
+}
+footer .redes-sociales {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+footer .redes-sociales img {
+  width: 30px;
+  height: 30px;
+}
+footer .redes-sociales li {
+  margin-right: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+main {
+  background-color: #28112B;
+}
+
+#hero {
+  width: 100%;
+  height: 700px;
+  background-image: url(../imagenes/portadaResident.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  overflow: hidden;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #hero {
+    height: 300px;
+    background-size: cover;
+    background-image: contain;
+    opacity: 0.7;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  #hero {
+    height: 300px;
+    background-size: 500px;
+    opacity: 0.7;
+    overflow: hidden;
+  }
+}
+#hero h1 {
+  font-size: 48px;
+  margin-top: 180px;
+  color: white;
+  padding: 20px;
+  text-align: justify;
+  margin-left: 110px;
+  margin: 40px;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #hero h1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  #hero h1 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+#hero a {
+  position: static;
+  padding: 10px 24px;
+  gap: 20px;
+  width: 100%;
+  height: 60px;
+  background: #8f00ff;
+  border-radius: 50px;
+  margin: 55px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fcfcff;
+}
+
+.neontext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 48px/normal "Poppins", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+@media (max-width: 767px) {
+  .neontext {
+    font-size: 18px;
+  }
+}
+.neontext .neontext:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+
+/* Estilos para sección 1 */
+.contenedor-categorias {
+  display: flex;
+  flex-direction: row;
+  height: 280px;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+@media (max-width: 767px) {
+  .contenedor-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 30px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .contenedor-categorias {
+    padding: 0px 60px;
+    margin: 30px 0;
+    gap: 10px;
+  }
+}
+.contenedor-categorias h3 {
+  color: white;
+}
+
+.categoria1 {
+  background-image: url(../imagenes/Spyro_-_Year_of_the_Dragon_-_Portada.webp);
+  background-size: cover;
+}
+
+.categoria2 {
+  background-image: url(../imagenes/resident.jpg);
+  background-size: cover;
+}
+
+.categoria3 {
+  background-image: url(../imagenes/dinocrisis.webp);
+  background-size: cover;
+}
+
+.categoria4 {
+  background-image: url(../imagenes/sonic.jpeg);
+}
+
+.categoria1,
+.categoria2,
+.categoria3,
+.categoria4 {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.separador {
+  height: 70px;
+  background-color: #030303;
+}
+
+/* Estilos para sección 2 */
+#guiaVideojuegos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  #guiaVideojuegos h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  #guiaVideojuegos {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    max-width: 80%;
+  }
+}
+#guiaVideojuegos h3 {
+  color: white;
+  background-color: #2b072b;
+  text-align: left;
+}
+#guiaVideojuegos .imagen-responsiva {
+  max-width: 100%;
+}
+#guiaVideojuegos .contenedor-imagen {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  margin: 3px 7px 7px 7px;
+}
+#guiaVideojuegos .contenedor-imagen contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2b072b;
+  margin-top: 20px;
+}
+
+p {
+  color: white;
+  margin-top: 20px;
+}
+
+/* Estilos para sección 3 */
+#juegosRecomendados {
+  margin-left: 120px;
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #juegosRecomendados h2 {
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+  }
+}
+#juegosRecomendados .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+  padding: 50px;
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    padding: 50px;
+    position: relative;
+  }
+}
+#juegosRecomendados .grid-container .item {
+  background-color: #2b072b !important;
+  border: 1px solid #8f00ff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 24px rgba(0, 51, 153, 0.16);
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 24px rgba(0, 51, 153, 0.16));
+  background-blend-mode: multiply;
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container .item {
+    width: 140px;
+    height: 120px;
+  }
+}
+#juegosRecomendados .grid-container .item img {
+  object-fit: cover;
+  width: 250px !important;
+  height: 250px !important;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #juegosRecomendados .grid-container .item img {
+    width: 150px !important;
+    height: 130px !important;
+  }
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container .item img {
+    width: 140px !important;
+    height: 120px !important;
+  }
+}
+#juegosRecomendados .grid-container svg {
+  width: 60px;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container svg {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -90px;
+  }
+}
+#juegosRecomendados .grid-container .corazoncito {
+  top: -80px;
+  position: relative;
+  right: -70px;
+  z-index: 1;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #juegosRecomendados .grid-container .corazoncito {
+    top: -40px;
+    left: 6px;
+  }
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container .corazoncito {
+    top: -40px;
+    left: 6px;
+  }
+}
+#juegosRecomendados .item:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Estilos para sección 4 newsletter */
+#newsletter {
+  text-align: center;
+  left: 300px;
+  background-color: #030303;
+}
+@media (max-width: 767px) {
+  #newsletter {
+    left: 0;
+    background-color: #030303;
+    height: 200px;
+  }
+}
+#newsletter p {
+  color: #fff;
+  background-color: #030303;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#newsletter .botonletter {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 20px;
+  position: relative;
+  width: 140px;
+  height: 40px;
+  left: 500px;
+  top: -20px;
+  background: #8f00ff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  color: #fcfcff;
+  align-items: center;
+  right: 70px;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  #newsletter .botonletter {
+    left: 0;
+    top: -28px;
+    margin: 20px auto;
+  }
+}
+#newsletter .botonletter a {
+  left: 20px;
+}
+
+.gridCategorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  position: relative;
+  height: 800px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .gridCategorias {
+    grid-template-columns: repeat(2, 2fr);
+    position: relative;
+    height: 1200px;
+    padding: 20px;
+    grid-gap: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .gridCategorias {
+    grid-template-columns: repeat(1, 2fr);
+    position: relative;
+    height: 1200px;
+    padding: 20px;
+    grid-gap: 1rem;
+  }
+}
+.gridCategorias .itemGrid {
+  border-radius: 4px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: 80px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .gridCategorias .itemGrid {
+    border-radius: 4px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+}
+.gridCategorias iframe {
+  position: relative;
+  left: 50px;
+  border-radius: 6px;
+  border: 3px solid #630e8a;
+  left: 80px;
+}
+
+/* Landing zona descarga */
+#zonaDescarga {
+  top: -400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#zonaDescarga .game-container {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin: 20px;
+  height: 300px;
+}
+#zonaDescarga .game {
+  background-color: #ececec;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+}
+#zonaDescarga .game p {
+  color: black;
+}
+#zonaDescarga .game h2 {
+  margin-bottom: 45px;
+}
+#zonaDescarga .game .game img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#zonaDescarga .download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#zonaDescarga .download-button .download-button:hover {
+  background-color: #0056b3;
+}
+#zonaDescarga .dropdownContainer {
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+#zonaDescarga .dropdownContainer .dropdown {
+  position: relative;
+}
+
+/* Landing juegos online */
+.juegos-online {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 30px;
+}
+.juegos-online .juego {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.juegos-online .juego img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.juegos-online .juego h2 {
+  margin-top: 10px;
+}
+.juegos-online .juego p {
+  color: #555;
+}
+.juegos-online .juego a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos para Contacto */
+#bannercontacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-image: url(../imagenes/imgcontacto.jpg);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+#formulario-contacto {
+  background-color: #28112b;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+#formulario-contacto h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#formulario-contacto p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+form .campo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+form .campo label {
+  display: block;
+  margin-bottom: 10px;
+}
+form .campo input,
+form .campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #8f00ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form button:hover {
+  background-color: #6a0080;
+}
+
+#hero {
+  width: 100%;
+  height: 700px;
+  background-image: url(../imagenes/portadaResident.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  overflow: hidden;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #hero {
+    height: 300px;
+    background-size: cover;
+    background-image: contain;
+    opacity: 0.7;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  #hero {
+    height: 300px;
+    background-size: 500px;
+    opacity: 0.7;
+    overflow: hidden;
+  }
+}
+#hero h1 {
+  font-size: 48px;
+  margin-top: 180px;
+  color: white;
+  padding: 20px;
+  text-align: justify;
+  margin-left: 110px;
+  margin: 40px;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #hero h1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  #hero h1 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+#hero a {
+  position: static;
+  padding: 10px 24px;
+  gap: 20px;
+  width: 100%;
+  height: 60px;
+  background: #8f00ff;
+  border-radius: 50px;
+  margin: 55px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fcfcff;
+}
+
+.neontext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 48px/normal "Poppins", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+@media (max-width: 767px) {
+  .neontext {
+    font-size: 18px;
+  }
+}
+.neontext .neontext:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+
+/* Estilos para sección 1 */
+.contenedor-categorias {
+  display: flex;
+  flex-direction: row;
+  height: 280px;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+@media (max-width: 767px) {
+  .contenedor-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 30px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .contenedor-categorias {
+    padding: 0px 60px;
+    margin: 30px 0;
+    gap: 10px;
+  }
+}
+.contenedor-categorias h3 {
+  color: white;
+}
+
+.categoria1 {
+  background-image: url(../imagenes/Spyro_-_Year_of_the_Dragon_-_Portada.webp);
+  background-size: cover;
+}
+
+.categoria2 {
+  background-image: url(../imagenes/resident.jpg);
+  background-size: cover;
+}
+
+.categoria3 {
+  background-image: url(../imagenes/dinocrisis.webp);
+  background-size: cover;
+}
+
+.categoria4 {
+  background-image: url(../imagenes/sonic.jpeg);
+}
+
+.categoria1,
+.categoria2,
+.categoria3,
+.categoria4 {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.separador {
+  height: 70px;
+  background-color: #030303;
+}
+
+/* Estilos para sección 2 */
+#guiaVideojuegos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  #guiaVideojuegos h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  #guiaVideojuegos {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    max-width: 80%;
+  }
+}
+#guiaVideojuegos h3 {
+  color: white;
+  background-color: #2b072b;
+  text-align: left;
+}
+#guiaVideojuegos .imagen-responsiva {
+  max-width: 100%;
+}
+#guiaVideojuegos .contenedor-imagen {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  margin: 3px 7px 7px 7px;
+}
+#guiaVideojuegos .contenedor-imagen contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2b072b;
+  margin-top: 20px;
+}
+
+p {
+  color: white;
+  margin-top: 20px;
+}
+
+/* Estilos para sección 3 */
+#juegosRecomendados {
+  margin-left: 120px;
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #juegosRecomendados h2 {
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+  }
+}
+#juegosRecomendados .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+  padding: 50px;
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    padding: 50px;
+    position: relative;
+  }
+}
+#juegosRecomendados .grid-container .item {
+  background-color: #2b072b !important;
+  border: 1px solid #8f00ff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 24px rgba(0, 51, 153, 0.16);
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 24px rgba(0, 51, 153, 0.16));
+  background-blend-mode: multiply;
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container .item {
+    width: 140px;
+    height: 120px;
+  }
+}
+#juegosRecomendados .grid-container .item img {
+  object-fit: cover;
+  width: 250px !important;
+  height: 250px !important;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #juegosRecomendados .grid-container .item img {
+    width: 150px !important;
+    height: 130px !important;
+  }
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container .item img {
+    width: 140px !important;
+    height: 120px !important;
+  }
+}
+#juegosRecomendados .grid-container svg {
+  width: 60px;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container svg {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -90px;
+  }
+}
+#juegosRecomendados .grid-container .corazoncito {
+  top: -40px;
+  position: relative;
+  right: -70px;
+  z-index: 1;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #juegosRecomendados .grid-container .corazoncito {
+    top: -40px;
+    left: 6px;
+  }
+}
+@media (max-width: 767px) {
+  #juegosRecomendados .grid-container .corazoncito {
+    top: -40px;
+    left: 6px;
+  }
+}
+#juegosRecomendados .item:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Estilos para sección 4 newsletter */
+#newsletter {
+  text-align: center;
+  left: 300px;
+  background-color: #030303;
+}
+@media (max-width: 767px) {
+  #newsletter {
+    left: 0;
+    background-color: #030303;
+    height: 200px;
+  }
+}
+#newsletter p {
+  color: #fff;
+  background-color: #030303;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#newsletter .botonletter {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 20px;
+  position: relative;
+  width: 140px;
+  height: 40px;
+  left: 500px;
+  top: -20px;
+  background: #8f00ff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  color: #fcfcff;
+  align-items: center;
+  right: 70px;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  #newsletter .botonletter {
+    left: 0;
+    top: -28px;
+    margin: 20px auto;
+  }
+}
+#newsletter .botonletter a {
+  left: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

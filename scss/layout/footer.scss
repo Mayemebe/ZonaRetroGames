@@ -1,0 +1,52 @@
+footer {
+    background-color: black;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    a {
+      text-decoration: none;
+      color: gray;
+      font-weight: 200;
+    }
+  
+    .footer-columna {
+      width: 20%;
+      padding: 0 15px;
+      box-sizing: border-box;
+      background-color: #030303;
+  
+      @include footer-columna() {
+        width: 50%;
+      }
+  
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        background-color: #030303;
+        color: white;
+      }
+    }
+  
+    .redes-sociales {
+      display: flex;
+      list-style: none;
+      padding: 0;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+  
+      li {
+        margin-right: 10px;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+      }
+    }
+  
+   
+  }
+  

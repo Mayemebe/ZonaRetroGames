@@ -1,0 +1,49 @@
+.gridCategorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    position: relative;
+    height: 800px;
+    margin: 0 auto;
+  
+    @include paginaCategorias-tablet() {
+      grid-template-columns: repeat(2, 2fr);
+      position: relative;
+      height: 1200px;
+      padding: 20px;
+      grid-gap: 1rem;
+    }
+  
+    @include paginaCategorias-celular() {
+      grid-template-columns: repeat(1, 2fr);
+      position: relative;
+      height: 1200px;
+      padding: 20px;
+      grid-gap: 1rem;
+    }
+  
+    .itemGrid {
+      border-radius: 4px;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      right: 80px;
+      margin: 0 auto;
+  
+      @include paginaCategorias-celular() {
+        border-radius: 4px;
+        width: 300px;
+        height: 200px;
+        position: relative;
+      }
+    }
+  
+    iframe {
+      position: relative;
+      left: 50px;
+      border-radius: 6px;
+      border: 3px solid rgba($color: #630e8a, $alpha: 1);
+      left: 80px;
+    }
+  }
+  

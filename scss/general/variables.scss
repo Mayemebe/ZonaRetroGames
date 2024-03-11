@@ -1,0 +1,42 @@
+$color-primario: #2b072b;
+$color-secundario: #8f00ff;
+$color-terciario: black;
+$tipografia-titulos: "Poppis";
+$tipografia-parrafos: "Montserrat";
+$titulosneon-sm: 18px;
+$titulosneon-md: 30px;
+$titulosneon-lg: 48px;
+
+// Media Queries para el home
+
+@mixin paginaDeInicio-celular {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin paginadeInicio-tablet {
+  @media (min-width: 768px) and (max-width: 1280px) {
+    @content;
+  }
+}
+
+// Media Queries para categorías
+
+@mixin paginaCategorias-celular {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin paginaCategorias-tablet {
+  @media (min-width: 768px) and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin footer-columna {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
