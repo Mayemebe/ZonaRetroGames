@@ -5,6 +5,14 @@
     position: relative;
     height: 800px;
     margin: 0 auto;
+
+    p {
+      color: white;
+      text-align: center;
+      position: relative;
+      left: 90px;
+
+    }
   
     @include paginaCategorias-tablet() {
       grid-template-columns: repeat(2, 2fr);
@@ -30,10 +38,7 @@
       right: 80px;
       
 
-      p {
-        color: white;
-        text-align: center;
-      }
+     
       
   
       @include paginaCategorias-celular() {

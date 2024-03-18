@@ -413,6 +413,12 @@ p {
   height: 800px;
   margin: 0 auto;
 }
+.gridCategorias p {
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 90px;
+}
 @media (min-width: 768px) and (max-width: 1280px) {
   .gridCategorias {
     grid-template-columns: repeat(2, 2fr);
@@ -437,10 +443,6 @@ p {
   height: 300px;
   position: relative;
   right: 80px;
-}
-.gridCategorias .itemGrid p {
-  color: white;
-  text-align: center;
 }
 @media (max-width: 767px) {
   .gridCategorias .itemGrid {
