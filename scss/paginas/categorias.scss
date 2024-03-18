@@ -28,7 +28,13 @@
       height: 300px;
       position: relative;
       right: 80px;
-      margin: 0 auto;
+      
+
+      p {
+        color: white;
+        text-align: center;
+      }
+      
   
       @include paginaCategorias-celular() {
         border-radius: 4px;

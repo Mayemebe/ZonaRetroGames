@@ -56,12 +56,15 @@ main {
 
 #hero {
   width: 100%;
-  height: 700px;
+  height: 200px;
   background-image: url(../imagenes/portadaResident.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
   overflow: hidden;
+}
+#hero .prueba {
+  color: blue;
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   #hero {
@@ -158,7 +161,6 @@ main {
   .contenedor-categorias {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0;
     margin: 30px 0;
   }
@@ -177,30 +179,62 @@ main {
 .categoria1 {
   background-image: url(../imagenes/Spyro_-_Year_of_the_Dragon_-_Portada.webp);
   background-size: cover;
+  margin: 9px;
+  border-radius: 10px;
+  transition: transform 0.7s ease;
+}
+.categoria1:hover {
+  transform: scale(1.1);
 }
 
 .categoria2 {
   background-image: url(../imagenes/resident.jpg);
   background-size: cover;
+  margin: 9px;
+  border-radius: 10px;
+  transition: transform 0.7s ease;
+}
+.categoria2:hover {
+  transform: scale(1.1);
 }
 
 .categoria3 {
   background-image: url(../imagenes/dinocrisis.webp);
   background-size: cover;
+  margin: 9px;
+  border-radius: 10px;
+  transition: transform 0.7s ease;
+}
+.categoria3:hover {
+  transform: scale(1.1);
 }
 
 .categoria4 {
   background-image: url(../imagenes/sonic.jpeg);
+  margin: 9px;
+  border-radius: 10px;
+  transition: transform 0.7s ease;
+}
+.categoria4:hover {
+  transform: scale(1.1);
 }
 
 .categoria1,
 .categoria2,
 .categoria3,
 .categoria4 {
-  width: calc(50% - 10px);
+  width: calc(40% - 10px) !important;
   margin-bottom: 20px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .categoria1,
+  .categoria2,
+  .categoria3,
+  .categoria4 {
+    width: 120px;
+  }
 }
 
 .separador {
@@ -261,6 +295,7 @@ p {
   margin-left: 120px;
   text-align: center;
   margin: auto;
+  /* Estilos para sección 4 newsletter */
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   #juegosRecomendados h2 {
@@ -272,14 +307,14 @@ p {
 #juegosRecomendados .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  gap: 20px;
+  gap: 30px;
   padding: 50px;
 }
 @media (max-width: 767px) {
   #juegosRecomendados .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
+    gap: 30px;
     padding: 50px;
     position: relative;
   }
@@ -316,61 +351,29 @@ p {
     height: 120px !important;
   }
 }
-#juegosRecomendados .grid-container svg {
-  width: 60px;
-  height: 60px;
-}
-@media (max-width: 767px) {
-  #juegosRecomendados .grid-container svg {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    top: -90px;
-  }
-}
-#juegosRecomendados .grid-container .corazoncito {
-  top: -80px;
-  position: relative;
-  right: -70px;
-  z-index: 1;
-}
-@media (min-width: 768px) and (max-width: 1280px) {
-  #juegosRecomendados .grid-container .corazoncito {
-    top: -40px;
-    left: 6px;
-  }
-}
-@media (max-width: 767px) {
-  #juegosRecomendados .grid-container .corazoncito {
-    top: -40px;
-    left: 6px;
-  }
-}
-#juegosRecomendados .item:hover {
+#juegosRecomendados .grid-container .item:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease;
 }
-
-/* Estilos para sección 4 newsletter */
-#newsletter {
+#juegosRecomendados #newsletter {
   text-align: center;
   left: 300px;
   background-color: #030303;
 }
 @media (max-width: 767px) {
-  #newsletter {
+  #juegosRecomendados #newsletter {
     left: 0;
     background-color: #030303;
     height: 200px;
   }
 }
-#newsletter p {
+#juegosRecomendados #newsletter p {
   color: #fff;
   background-color: #030303;
   text-align: center;
   margin-bottom: 40px;
 }
-#newsletter .botonletter {
+#juegosRecomendados #newsletter .botonletter {
   display: flex;
   align-items: center;
   padding: 10px 24px;
@@ -392,13 +395,13 @@ p {
   border-radius: 8px;
 }
 @media (max-width: 767px) {
-  #newsletter .botonletter {
+  #juegosRecomendados #newsletter .botonletter {
     left: 0;
     top: -28px;
     margin: 20px auto;
   }
 }
-#newsletter .botonletter a {
+#juegosRecomendados #newsletter .botonletter a {
   left: 20px;
 }
 
@@ -434,7 +437,10 @@ p {
   height: 300px;
   position: relative;
   right: 80px;
-  margin: 0 auto;
+}
+.gridCategorias .itemGrid p {
+  color: white;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .gridCategorias .itemGrid {
