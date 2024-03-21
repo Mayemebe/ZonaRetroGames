@@ -182,9 +182,42 @@ main {
   margin: 9px;
   border-radius: 10px;
   transition: transform 0.7s ease;
+  opacity: 0.5;
 }
 .categoria1:hover {
   transform: scale(1.1);
+  opacity: 1;
+}
+.categoria1 a {
+  position: relative;
+  padding: 10px 24px;
+  gap: 20px;
+  width: 100%;
+  height: 60px;
+  background: #8f00ff;
+  border-radius: 50px;
+  margin: 40px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcfcff;
+  top: 50px;
+  left: 50px;
+}
+@media (max-width: 767px) {
+  .categoria1 a {
+    position: relative;
+    padding: 5px 12px;
+    font-size: 13px;
+    left: 20px;
+    margin: 10px;
+  }
+}
+.categoria1 a:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .categoria2 {
@@ -193,9 +226,42 @@ main {
   margin: 9px;
   border-radius: 10px;
   transition: transform 0.7s ease;
+  opacity: 0.5;
 }
 .categoria2:hover {
   transform: scale(1.1);
+  opacity: 1;
+}
+.categoria2 a {
+  position: relative;
+  padding: 10px 24px;
+  gap: 20px;
+  width: 100%;
+  height: 60px;
+  background: #8f00ff;
+  border-radius: 50px;
+  margin: 40px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcfcff;
+  top: 50px;
+  left: 50px;
+}
+@media (max-width: 767px) {
+  .categoria2 a {
+    position: relative;
+    padding: 5px 12px;
+    font-size: 13px;
+    left: 20px;
+    margin: 10px;
+  }
+}
+.categoria2 a:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .categoria3 {
@@ -204,9 +270,42 @@ main {
   margin: 9px;
   border-radius: 10px;
   transition: transform 0.7s ease;
+  opacity: 0.5;
 }
 .categoria3:hover {
   transform: scale(1.1);
+  opacity: 1;
+}
+.categoria3 a {
+  position: relative;
+  padding: 10px 24px;
+  gap: 20px;
+  width: 100%;
+  height: 60px;
+  background: #8f00ff;
+  border-radius: 50px;
+  margin: 40px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcfcff;
+  top: 50px;
+  left: 50px;
+}
+@media (max-width: 767px) {
+  .categoria3 a {
+    position: relative;
+    padding: 5px 12px;
+    font-size: 13px;
+    left: 20px;
+    margin: 10px;
+  }
+}
+.categoria3 a:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .categoria4 {
@@ -214,9 +313,42 @@ main {
   margin: 9px;
   border-radius: 10px;
   transition: transform 0.7s ease;
+  opacity: 0.5;
 }
 .categoria4:hover {
   transform: scale(1.1);
+  opacity: 1;
+}
+.categoria4 a {
+  position: relative;
+  padding: 10px 24px;
+  gap: 20px;
+  width: 100%;
+  height: 60px;
+  background: #8f00ff;
+  border-radius: 50px;
+  margin: 40px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcfcff;
+  top: 50px;
+  left: 50px;
+}
+@media (max-width: 767px) {
+  .categoria4 a {
+    position: relative;
+    padding: 5px 12px;
+    font-size: 13px;
+    left: 20px;
+    margin: 10px;
+  }
+}
+.categoria4 a:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .categoria1,
@@ -246,10 +378,49 @@ main {
 #guiaVideojuegos {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  /* Estilos para sección 3 */
+}
+#guiaVideojuegos a {
+  position: relative;
+  padding: 20px 12px;
+  gap: 20px;
+  width: 400px;
+  height: 60px;
+  background: #8f00ff;
+  border-radius: 50px;
+  margin: 10px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcfcff;
+  top: 50px;
+  right: 200px;
 }
 @media (max-width: 767px) {
-  #guiaVideojuegos h2 {
+  #guiaVideojuegos a {
+    right: 10px !important;
+  }
+}
+#guiaVideojuegos a img {
+  border-radius: 20px;
+  align-items: center;
+  margin: 20px;
+  border: 10px;
+}
+@media (max-width: 767px) {
+  #guiaVideojuegos a {
+    position: relative;
+    padding: 5px 12px;
+    font-size: 13px;
+    right: 80px;
+    top: 10px;
+    width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  #guiaVideojuegos a h2 {
     font-size: 18px;
   }
 }
@@ -266,52 +437,60 @@ main {
   color: white;
   background-color: #2b072b;
   text-align: left;
+  position: relative;
+  right: 190px;
+  margin: 20px;
+}
+@media (max-width: 767px) {
+  #guiaVideojuegos h3 {
+    position: relative;
+    right: 10px;
+  }
 }
 #guiaVideojuegos .imagen-responsiva {
   max-width: 100%;
 }
 #guiaVideojuegos .contenedor-imagen {
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
   display: flex;
   margin-top: 30px;
-  margin: 3px 7px 7px 7px;
+  margin: 10px;
+  justify-content: center;
 }
-#guiaVideojuegos .contenedor-imagen contenedor-texto {
+#guiaVideojuegos .contenedor-texto {
+  height: 100%;
+  width: 500px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   background-color: #2b072b;
   margin-top: 20px;
 }
-
-p {
+#guiaVideojuegos p {
   color: white;
   margin-top: 20px;
 }
-
-/* Estilos para sección 3 */
-#juegosRecomendados {
+#guiaVideojuegos #juegosRecomendados {
   margin-left: 120px;
   text-align: center;
   margin: auto;
   /* Estilos para sección 4 newsletter */
 }
 @media (min-width: 768px) and (max-width: 1280px) {
-  #juegosRecomendados h2 {
+  #guiaVideojuegos #juegosRecomendados h2 {
     font-size: 30px;
     margin-left: 10px;
     color: white;
   }
 }
-#juegosRecomendados .grid-container {
+#guiaVideojuegos #juegosRecomendados .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   gap: 30px;
   padding: 50px;
 }
 @media (max-width: 767px) {
-  #juegosRecomendados .grid-container {
+  #guiaVideojuegos #juegosRecomendados .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 30px;
@@ -319,7 +498,7 @@ p {
     position: relative;
   }
 }
-#juegosRecomendados .grid-container .item {
+#guiaVideojuegos #juegosRecomendados .grid-container .item {
   background-color: #2b072b !important;
   border: 1px solid #8f00ff;
   border-radius: 12px;
@@ -329,51 +508,51 @@ p {
   background-blend-mode: multiply;
 }
 @media (max-width: 767px) {
-  #juegosRecomendados .grid-container .item {
+  #guiaVideojuegos #juegosRecomendados .grid-container .item {
     width: 140px;
     height: 120px;
   }
 }
-#juegosRecomendados .grid-container .item img {
+#guiaVideojuegos #juegosRecomendados .grid-container .item img {
   object-fit: cover;
   width: 250px !important;
   height: 250px !important;
 }
 @media (min-width: 768px) and (max-width: 1280px) {
-  #juegosRecomendados .grid-container .item img {
+  #guiaVideojuegos #juegosRecomendados .grid-container .item img {
     width: 150px !important;
     height: 130px !important;
   }
 }
 @media (max-width: 767px) {
-  #juegosRecomendados .grid-container .item img {
+  #guiaVideojuegos #juegosRecomendados .grid-container .item img {
     width: 140px !important;
     height: 120px !important;
   }
 }
-#juegosRecomendados .grid-container .item:hover {
+#guiaVideojuegos #juegosRecomendados .grid-container .item:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease;
 }
-#juegosRecomendados #newsletter {
+#guiaVideojuegos #juegosRecomendados #newsletter {
   text-align: center;
   left: 300px;
   background-color: #030303;
 }
 @media (max-width: 767px) {
-  #juegosRecomendados #newsletter {
+  #guiaVideojuegos #juegosRecomendados #newsletter {
     left: 0;
     background-color: #030303;
     height: 200px;
   }
 }
-#juegosRecomendados #newsletter p {
+#guiaVideojuegos #juegosRecomendados #newsletter p {
   color: #fff;
   background-color: #030303;
   text-align: center;
   margin-bottom: 40px;
 }
-#juegosRecomendados #newsletter .botonletter {
+#guiaVideojuegos #juegosRecomendados #newsletter .botonletter {
   display: flex;
   align-items: center;
   padding: 10px 24px;
@@ -395,13 +574,13 @@ p {
   border-radius: 8px;
 }
 @media (max-width: 767px) {
-  #juegosRecomendados #newsletter .botonletter {
+  #guiaVideojuegos #juegosRecomendados #newsletter .botonletter {
     left: 0;
     top: -28px;
     margin: 20px auto;
   }
 }
-#juegosRecomendados #newsletter .botonletter a {
+#guiaVideojuegos #juegosRecomendados #newsletter .botonletter a {
   left: 20px;
 }
 

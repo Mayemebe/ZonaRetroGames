@@ -134,25 +134,105 @@
     margin: 9px;
     border-radius: 10px;
     transition: transform 0.7s ease; 
-  
+    opacity: 0.5;
+
     &:hover {
       transform: scale(1.1);
+      opacity: 1;
     }
 
+
+    a {
+      position: relative;
+      padding: 10px 24px;
+      gap: 20px;
+      width: 100%;
+      height: 60px;
+      background: $color-secundario;
+      border-radius: 50px;
+      margin: 40px;
+      margin-top: 70px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      text-decoration: none;
+      color: #fcfcff;
+      top: 50px;
+      left:50px;
+      
     
+  @include paginaCategorias-celular() {
+    position: relative;
+    padding: 5px 12px;
+    font-size:13px;
+    left:20px;
+    margin: 10px;
+
   }
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+
+  
+}
+
+}
+
+  }
+
    
+  
   .categoria2 {
     background-image: url(../imagenes/resident.jpg);
     background-size: cover;
     margin: 9px;
     border-radius: 10px;
     transition: transform 0.7s ease; 
+    opacity: 0.5;
   
     &:hover {
       transform: scale(1.1);
+      opacity: 1;
     }
+
+    a {
+      position: relative;
+      padding: 10px 24px;
+      gap: 20px;
+      width: 100%;
+      height: 60px;
+      background: $color-secundario;
+      border-radius: 50px;
+      margin: 40px;
+      margin-top: 70px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      text-decoration: none;
+      color: #fcfcff;
+      top: 50px;
+      left:50px;
+      
+    
+  @include paginaCategorias-celular() {
+    position: relative;
+    padding: 5px 12px;
+    font-size:13px;
+    left:20px;
+    margin: 10px;
+
   }
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+
+  
+}
+  }
+
+}
   
   .categoria3 {
     background-image: url(../imagenes/dinocrisis.webp);
@@ -160,22 +240,100 @@
     margin: 9px;
     border-radius: 10px;
     transition: transform 0.7s ease; 
+    opacity: 0.5;
   
     &:hover {
       transform: scale(1.1);
+      opacity: 1;
     }
+    a {
+      position: relative;
+      padding: 10px 24px;
+      gap: 20px;
+      width: 100%;
+      height: 60px;
+      background: $color-secundario;
+      border-radius: 50px;
+      margin: 40px;
+      margin-top: 70px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      text-decoration: none;
+      color: #fcfcff;
+      top: 50px;
+      left:50px;
+      
+    
+  @include paginaCategorias-celular() {
+    position: relative;
+    padding: 5px 12px;
+    font-size:13px;
+    left:20px;
+    margin: 10px;
+
   }
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+
+  
+}
+  }
+
+}
+  
   
   .categoria4 {
     background-image: url(../imagenes/sonic.jpeg);
     margin: 9px;
     border-radius: 10px;
     transition: transform 0.7s ease; 
+    opacity: 0.5;
   
     &:hover {
       transform: scale(1.1);
+      opacity: 1;
     }
+      a {
+        position: relative;
+        padding: 10px 24px;
+        gap: 20px;
+        width: 100%;
+        height: 60px;
+        background: $color-secundario;
+        border-radius: 50px;
+        margin: 40px;
+        margin-top: 70px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        text-decoration: none;
+        color: #fcfcff;
+        top: 50px;
+        left:50px;
+        
+      
+    @include paginaCategorias-celular() {
+      position: relative;
+      padding: 5px 12px;
+      font-size:13px;
+      left:20px;
+      margin: 10px;
+  
+    }
+  
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+  
+    
   }
+    }
+  
+  }
+  
   
   .categoria1,
   .categoria2,
@@ -205,13 +363,65 @@
   #guiaVideojuegos {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+  
+
+    a {
+      position: relative;
+      padding: 20px 12px;
+      gap: 20px;
+      width: 400px;
+      height: 60px;
+      background: $color-secundario;
+      border-radius: 50px;
+      margin: 10px;
+      margin-top: 70px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      text-decoration: none;
+      color: #fcfcff;
+      top: 50px;
+      right:200px;
+
+    @include paginaCategorias-celular() {
+      right:10px !important;
+    }
+  
+
+    
+      img {
+        border-radius: 20px;
+        align-items: center;
+        margin: 20px;
+        border: 10px;
+      }
+
+     
+  
+
+    @include paginaCategorias-celular() {
+      position: relative;
+      padding: 5px 12px;
+      font-size:13px;
+      right:80px;
+      top:10px;
+      width: 200px;
+
+  
+    }
+    
+
+
   
     h2 {
       @include paginaCategorias-celular() {
         font-size: $titulosneon-sm;
       }
     }
+    
+
+
+}
   
     @include paginaDeInicio-celular() {
       flex-direction: column;
@@ -225,6 +435,15 @@
       color: white;
       background-color: $color-primario;
       text-align: left;
+      position: relative;
+      right: 190px;
+      margin:20px;
+
+      @include paginaDeInicio-celular() {
+        position: relative;
+        right:10px
+
+      }
     }
   
     .imagen-responsiva {
@@ -232,20 +451,25 @@
     }
   
     .contenedor-imagen {
-      height: 100%;
-      width: 100%;
+      height: 50%;
+      width: 50%;
       display: flex;
       margin-top: 30px;
-      margin: 3px 7px 7px 7px;
+      margin: 10px;
+      justify-content: center;
   
-      contenedor-texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: $color-primario;
-        margin-top: 20px;
-      }
+    
     }
+
+    .contenedor-texto {
+      height: 100%;
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      background-color: $color-primario;
+      margin-top: 20px;
+
+    
   }
   
   p {
@@ -378,3 +602,4 @@
   
     }
     
+  }
